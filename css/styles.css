@@ -263,19 +263,6 @@ img {
   list-style-type: none;
 }
 
-.current{ 
-  position: relative;
-}
-.current::after{ 
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  left: 0;
-  bottom: -1px; 
-  border-radius: 2px;
-  background-color: #404bbf;
-}
 
 .header-menu {
   display: flex;
@@ -300,6 +287,21 @@ img {
 
 .header-menu-link:is(:hover, :focus) {
   color: var(--active-color);
+}
+
+.current{ 
+  position: relative;
+  color: #404bbf;
+}
+.current::after{ 
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -1px; 
+  border-radius: 2px;
+  background-color: #404bbf;
 }
 
 .header-address {
