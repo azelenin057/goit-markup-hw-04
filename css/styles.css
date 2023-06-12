@@ -5,6 +5,7 @@
   --p-color: #434455;
   --button-main-color: #4d5ae5;
   --button-portfolio-main: #e7e9fc;
+  --white: #ffffff;
 }
 
 body {
@@ -441,9 +442,56 @@ footer {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+.footer-container{ 
+  display: flex;
+  align-items: baseline;
+}
+.footer-logo-container {
+  margin-right: 120px;
+}
+.footer-soc-text { 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+.footer-soc-list{
+  display: flex;
+  gap: 16px;
+}
+
+.footer-soc-item{
+  width: 40px;
+  height: 40px; 
+}
+
+.footer-soc-link{
+  width: 100%;
+  height: 100%;
+  background-color: var(--button-main-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.footer-soc-link:is(:hover, :focus) {
+  background-color: #31d0aa;
+}
+
+.footer-svg {
+  fill: var(--button-color);
+  height: 24px;
+  width: 24px;
+}
+
 .footer-logo span {
   color: #f4f4fd;
 }
+
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
